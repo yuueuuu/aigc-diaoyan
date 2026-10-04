@@ -1,0 +1,21 @@
+/*
+ * 「2025-2026 AIGC调研」打印导出样式
+ * 通过浏览器「打印 → 另存为 PDF」导出完整报告
+ */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  .print-block {
+    break-inside: avoid;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+}
